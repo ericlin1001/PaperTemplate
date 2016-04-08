@@ -6,7 +6,9 @@ viewer=evince
 bib=bibtex
 
 
-all:$(file).tex
+all:compile
+	
+compile: *
 	$(compiler) $(file).tex
 	$(compiler) $(file).tex
 	$(viewer) $(file).pdf
